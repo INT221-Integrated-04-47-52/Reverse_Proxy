@@ -2,7 +2,7 @@ version: '3'
 services:
  reverseproxy:
     container_name: rproxy_con
-    image: rproxy
+    image: nginx
     volumes:
             - ./nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
@@ -10,4 +10,4 @@ services:
 networks:
     default:
        external:
-          name: network
+          name: network          
