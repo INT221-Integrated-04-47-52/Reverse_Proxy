@@ -1,6 +1,6 @@
 version: '3'
 services:
-  Rproxy:
+  rproxy:
     container_name: Rproxy_con
     image: Rproxy
     volumes:
