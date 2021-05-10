@@ -2,7 +2,7 @@ version: '3'
 services:
   Rproxy:
     container_name: Rproxy_con
-    image: nginx
+    image: Rproxy
     volumes:
             - ./nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
